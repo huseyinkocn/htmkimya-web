@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTM Silikon Kimya Tekstil | Endüstriyel Silikon Üretim &amp; Tedarik</title>
+  <meta name="description" content="HTM Silikon Kimya Tekstil; tekstil, kalıp, medikal ve kauçuk sanayii için çorap baskı, gofre, emprime ve transfer silikonları, RTV 1 / RTV 2, medikal ve protez silikonları ile HTV kauçuk üretim ve tedariki. Avcılar / İstanbul.">
+  <meta name="theme-color" content="#01235B">
+  <link rel="canonical" href="https://htmkimya.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="HTM Silikon Kimya Tekstil">
+  <meta property="og:title" content="HTM Silikon Kimya Tekstil | Endüstriyel Silikon Üretim &amp; Tedarik">
+  <meta property="og:description" content="Tekstil, kalıp, medikal ve kauçuk sanayii için silikon hammaddeleri. Teknik föy ve fiyat bilgisi için hemen ulaşın.">
+  <meta property="og:url" content="https://htmkimya.com/">
+  <meta property="og:image" content="https://htmkimya.com/images/urunler/transfer.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- İkon dosyası değişirse ?v= sayısını artırın; tarayıcı önbelleğini yeniler -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=2">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=2">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   { 950: '#011433', 900: '#01235B', 800: '#012D6A', 700: '#013C82' },
+            cobalt: { 700: '#014DB8', 600: '#015DDD', 500: '#0279E8', 400: '#3D9BF5' },
+            wave:   { 400: '#2AA7FF', 300: '#7CC8FF', 200: '#B9E0FF', 100: '#DEF0FF', 50: '#F1F8FF' },
+            mist: '#F4F6FA'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            card: '0 1px 2px rgba(1,35,91,.05), 0 10px 28px -16px rgba(1,35,91,.2)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer components {
+      .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+
+      .eyebrow { @apply inline-flex items-center gap-3 text-xs font-bold tracking-[0.18em] text-cobalt-600; }
+      .eyebrow::before { content: ""; @apply h-0.5 w-8 rounded-full bg-cobalt-500; }
+      .section-title { @apply mt-3 font-display text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl; }
+      .section-lead { @apply mt-4 text-base leading-relaxed text-slate-600 sm:text-lg; }
+
+      .btn { @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl px-5 py-3 text-sm font-semibold transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cobalt-500 focus-visible:ring-offset-2; }
+      .btn-wa { @apply bg-cobalt-600 text-white shadow-sm hover:bg-cobalt-700; }
+      .btn-primary { @apply bg-cobalt-600 text-white shadow-sm hover:bg-cobalt-700; }
+      .btn-outline { @apply border border-slate-300 bg-white text-navy-900 hover:border-cobalt-500 hover:text-cobalt-600; }
+      .btn-light { @apply bg-white text-navy-900 shadow-sm hover:bg-wave-100; }
+      .btn-ghost { @apply border border-white/30 text-white hover:bg-white/10; }
+
+      .nav-link { @apply relative rounded-lg px-3.5 py-2 text-sm font-semibold text-navy-800 transition hover:text-cobalt-600; }
+      .nav-link[aria-current="true"] { @apply text-cobalt-600; }
+      .nav-link[aria-current="true"]::after { content: ""; @apply absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-cobalt-600; }
+
+      .field { @apply block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400 focus:border-cobalt-500 focus:outline-none focus:ring-2 focus:ring-cobalt-500/20; }
+      .field-label { @apply mb-1.5 block text-sm font-semibold text-navy-900; }
+
+      /* Ürün kartı */
+      .product { @apply flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card hover:-translate-y-1 hover:border-cobalt-400/60 hover:shadow-xl; }
+      .product-media { @apply relative block aspect-[4/3] w-full overflow-hidden bg-wave-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-cobalt-500; }
+      .product-media img { @apply h-full w-full object-cover transition duration-500; }
+      .product:hover .product-media img { @apply scale-105; }
+      .product-sector { @apply absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-navy-800 shadow-sm; }
+      .product-sector i { @apply text-cobalt-600; }
+      .product-count { @apply absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-navy-950/70 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm; }
+      .product-body { @apply flex flex-1 flex-col p-5; }
+      .product-icon { @apply grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-wave-100 text-lg text-cobalt-600; }
+      .product-kicker { @apply text-[11px] font-bold tracking-[0.14em] text-cobalt-600; }
+      .product-title { @apply mt-0.5 font-display text-lg font-bold leading-snug text-navy-900; }
+      .product-desc { @apply mt-3.5 text-sm leading-relaxed text-slate-600; }
+      .product-specs { @apply mb-5 mt-4 rounded-xl border border-slate-200/80 bg-mist text-[13px] leading-snug; }
+      .product-specs > div { @apply flex gap-3 px-3.5 py-2; }
+      .product-specs > div + div { @apply border-t border-slate-200/80; }
+      .product-specs dt { @apply w-[4.25rem] shrink-0 font-semibold text-navy-800; }
+      .product-specs dd { @apply text-slate-600; }
+      .product-actions { @apply mt-auto flex flex-wrap gap-2; }
+      .product-actions .btn { @apply flex-auto px-3 py-2.5 text-[13px]; }
+    }
+  </style>
+
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; -webkit-text-size-adjust: 100%; }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+
+    .hero-glow {
+      background:
+        radial-gradient(55% 60% at 88% 6%, rgba(2, 124, 225, .5), transparent 62%),
+        radial-gradient(45% 55% at 0% 100%, rgba(42, 167, 255, .16), transparent 60%),
+        linear-gradient(180deg, #01235B 0%, #012A68 100%);
+    }
+    #site-header.is-scrolled { box-shadow: 0 8px 24px -14px rgba(1, 35, 91, .3); }
+
+
+    /* Kaydırınca beliren içerik (JS kapalıysa her şey görünür kalır) */
+    .js .reveal {
+      opacity: 0; translate: 0 18px;
+      transition: opacity .6s ease, translate .6s ease, transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    }
+    .js .reveal.is-visible { opacity: 1; translate: 0 0; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal { opacity: 1; translate: none; transition: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HTM Silikon Kimya Tekstil",
+    "legalName": "HTM Silikon Kimya Tekstil Sanayi ve Ticaret Limited Şirketi",
+    "url": "https://htmkimya.com/",
+    "logo": "https://htmkimya.com/images/htm-logo-512.png",
+    "image": "https://htmkimya.com/images/urunler/transfer.jpg",
+    "email": "metin@htmkimya.com",
+    "telephone": "+905321343576",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tahtakale Mah. Babadağ Sokak No:2 A",
+      "postalCode": "34320",
+      "addressLocality": "Avcılar",
+      "addressRegion": "İstanbul",
+      "addressCountry": "TR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "name": "Metin Tanrıkulu",
+      "telephone": "+905321343576",
+      "email": "metin@htmkimya.com",
+      "availableLanguage": "tr"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-white text-slate-700 antialiased">
+
+  <a href="#icerik" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-navy-900 focus:shadow-lg">İçeriğe geç</a>
+
+  <!-- ÜST BİLGİ ŞERİDİ -->
+  <div class="hidden bg-navy-950 text-xs text-wave-200 md:block">
+    <div class="container-x flex h-9 items-center justify-between">
+      <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-wave-400"></i> Tahtakale Mah. Babadağ Sokak No:2 A, Avcılar / İstanbul</p>
+      <div class="flex items-center gap-6">
+        <a href="mailto:metin@htmkimya.com" class="flex items-center gap-2 transition hover:text-white"><i class="fa-solid fa-envelope text-wave-400"></i> metin@htmkimya.com</a>
+        <a href="tel:+905321343576" class="flex items-center gap-2 transition hover:text-white"><i class="fa-solid fa-phone text-wave-400"></i> +90 532 134 35 76</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="site-header" class="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur transition-shadow duration-300">
+    <div class="container-x flex h-16 items-center justify-between gap-4 lg:h-20">
+      <a href="#anasayfa" class="flex shrink-0 items-center gap-3" aria-label="HTM Silikon Kimya Tekstil — Ana Sayfa">
+        <img src="images/htm-logo.svg" alt="HTM" width="1409" height="520" class="h-9 w-auto lg:h-11">
+        <span class="hidden border-l border-slate-200 pl-3 text-[10px] font-bold leading-[1.4] tracking-[0.12em] text-slate-500 min-[370px]:block lg:text-[11px] lg:tracking-[0.16em]">SİLİKON KİMYA<br>TEKSTİL</span>
+      </a>
+
+      <nav class="hidden items-center gap-1 lg:flex" aria-label="Ana menü">
+        <a href="#anasayfa" class="nav-link" data-nav="anasayfa">Ana Sayfa</a>
+        <a href="#kurumsal" class="nav-link" data-nav="kurumsal">Kurumsal</a>
+        <a href="#urunler" class="nav-link" data-nav="urunler">Ürünler</a>
+        <a href="#iletisim" class="nav-link" data-nav="iletisim">İletişim</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/905321343576" data-wa="genel" target="_blank" rel="noopener" class="btn btn-wa h-11 px-3.5 py-0 sm:px-5" aria-label="Hızlı İletişim — WhatsApp">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span class="hidden sm:inline">Hızlı İletişim</span>
+        </a>
+        <button type="button" id="menu-toggle" class="grid h-11 w-11 place-items-center rounded-xl border border-slate-200 text-navy-900 transition hover:bg-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-cobalt-500 lg:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menüyü aç veya kapat">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white lg:hidden">
+      <nav class="container-x grid gap-1 py-3" aria-label="Mobil menü">
+        <a href="#anasayfa" class="rounded-lg px-3 py-3 text-base font-semibold text-navy-900 hover:bg-mist">Ana Sayfa</a>
+        <a href="#kurumsal" class="rounded-lg px-3 py-3 text-base font-semibold text-navy-900 hover:bg-mist">Kurumsal</a>
+        <a href="#urunler" class="rounded-lg px-3 py-3 text-base font-semibold text-navy-900 hover:bg-mist">Ürünler</a>
+        <a href="#iletisim" class="rounded-lg px-3 py-3 text-base font-semibold text-navy-900 hover:bg-mist">İletişim</a>
+        <a href="tel:+905321343576" class="btn btn-outline mt-2"><i class="fa-solid fa-phone"></i> +90 532 134 35 76</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+
+    <!-- HERO -->
+    <section id="anasayfa" class="relative isolate overflow-hidden bg-navy-900 text-white">
+      <div class="hero-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+
+      <div class="container-x grid items-start gap-12 pb-28 pt-12 sm:pb-36 sm:pt-16 lg:grid-cols-2 lg:gap-14 lg:pb-44 lg:pt-20">
+        <div>
+          <p class="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-wave-200">
+            <span class="h-1.5 w-1.5 rounded-full bg-wave-400"></span>
+            Tekstil · Kalıp · Medikal · Kauçuk
+          </p>
+          <h1 class="mt-5 font-display text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl sm:leading-[1.08] xl:text-[3.5rem]">
+            Endüstriyel Silikon Çözümlerinde <span class="text-wave-300">Güvenilir Üretim &amp; Tedarik</span>
+          </h1>
+          <p class="mt-5 max-w-xl text-base leading-relaxed text-wave-100/90 sm:text-lg">
+            Tekstil baskıdan kalıp, medikal ve kauçuk üretimine kadar; uygulamanıza uygun silikon hammaddesini tutarlı kalite, hızlı sevkiyat ve teknik destekle sunuyoruz.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a href="#urunler" class="btn btn-light px-6 py-3.5">Ürünleri İncele <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            <a href="tel:+905321343576" class="btn btn-ghost px-6 py-3.5"><i class="fa-solid fa-phone text-xs"></i> Hemen Ara: +90 532 134 35 76</a>
+          </div>
+
+          <dl class="mt-10 grid max-w-md grid-cols-[auto_auto_1fr] gap-x-6 gap-y-4 border-t border-white/10 pt-6 sm:gap-x-10">
+            <div>
+              <dd class="font-display text-2xl font-extrabold sm:text-3xl">11</dd>
+              <dt class="mt-1 text-xs text-wave-200">Ürün grubu</dt>
+            </div>
+            <div>
+              <dd class="font-display text-2xl font-extrabold sm:text-3xl">4</dd>
+              <dt class="mt-1 text-xs text-wave-200">Sektöre çözüm</dt>
+            </div>
+            <div>
+              <dd class="font-display text-2xl font-extrabold sm:text-3xl">TDS, MSDS</dd>
+              <dt class="mt-1 text-xs text-wave-200">ve sertifikalar</dt>
+            </div>
+          </dl>
+
+          <!-- Silikon görsel şeridi: firmanın gönderdiği görselin üç paneli (images/anasayfa).
+               Sütun oranları (1.7 / 1.3 / 1.7) görsel oranlarıyla aynı, böylece üç görsel eşit yükseklikte kalır. -->
+          <div class="mt-8 grid grid-cols-[1.7fr_1.3fr_1.7fr] gap-2 sm:gap-3">
+            <figure class="aspect-[1.7/1] overflow-hidden rounded-xl bg-navy-800 shadow-xl ring-1 ring-white/10">
+              <img src="images/anasayfa/silisyum.jpg" alt="Silisyum: kuvars kristalleri, silisyum metali ve Si element kartı" width="612" height="360" decoding="async" class="h-full w-full object-cover">
+            </figure>
+            <figure class="aspect-[1.3/1] overflow-hidden rounded-xl bg-white shadow-xl ring-1 ring-white/10">
+              <img src="images/anasayfa/silikon-molekul.jpg" alt="Silikon molekül yapısı modeli" width="468" height="360" decoding="async" class="h-full w-full object-cover">
+            </figure>
+            <figure class="aspect-[1.7/1] overflow-hidden rounded-xl bg-navy-800 shadow-xl ring-1 ring-white/10">
+              <img src="images/anasayfa/sivi-silikon.jpg" alt="Tabağa akan şeffaf sıvı silikon" width="612" height="360" decoding="async" class="h-full w-full object-cover">
+            </figure>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
+          <!-- Her görsel iki ürün fotoğrafının birleştirilmiş hâli (images/anasayfa), kutu oranlarına göre hazırlandı -->
+          <div class="grid grid-cols-2 gap-3 sm:gap-4">
+            <figure class="col-span-2 aspect-[16/10] overflow-hidden rounded-2xl bg-navy-800 shadow-2xl ring-1 ring-white/10">
+              <img src="images/anasayfa/corap-baski.jpg" alt="Çorap baskı silikonu: kaydırmaz silikon baskılı çoraplar ve silikon kovaları" width="1160" height="726" fetchpriority="high" class="h-full w-full object-cover">
+            </figure>
+            <figure class="aspect-[4/3] overflow-hidden rounded-2xl bg-navy-800 shadow-xl ring-1 ring-white/10">
+              <img src="images/anasayfa/gofre-baski.jpg" alt="Gofre baskı silikonu ile kabartma baskılı sweatshirt ve tişört" width="800" height="599" class="h-full w-full object-cover">
+            </figure>
+            <figure class="aspect-[4/3] overflow-hidden rounded-2xl bg-navy-800 shadow-xl ring-1 ring-white/10">
+              <img src="images/anasayfa/bebek-emzik.jpg" alt="Bebek emzik silikonu: şeffaf silikon biberon emziği ve emzikle beslenen bebek" width="800" height="600" class="h-full w-full object-cover">
+            </figure>
+          </div>
+          <div class="absolute -bottom-6 left-4 hidden items-center gap-3 rounded-2xl bg-white px-4 py-3 text-navy-900 shadow-xl sm:flex lg:-left-6">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-wave-100 text-cobalt-600"><i class="fa-solid fa-headset"></i></span>
+            <span>
+              <span class="block text-sm font-bold">Teknik Destek</span>
+              <span class="block text-xs text-slate-500">Ürün seçimi &amp; uygulama</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dalga geçişi -->
+      <svg class="absolute inset-x-0 bottom-0 -z-10 h-16 w-full sm:h-24 lg:h-28" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#015DDD" fill-opacity=".7" d="M0 62C240 14 480 118 720 66s480-52 720 2v72H0z"/>
+        <path fill="#2AA7FF" fill-opacity=".6" d="M0 88c240-40 480 44 720 4s480-40 720 6v42H0z"/>
+        <path fill="#ffffff" d="M0 112c240-30 480 30 720 0s480-30 720 4v24H0z"/>
+      </svg>
+    </section>
+
+    <!-- KURUMSAL (metinler firmadan geldiği gibi) -->
+    <section id="kurumsal" class="bg-white py-20 sm:py-24">
+      <div class="container-x">
+        <div class="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal">
+            <p class="eyebrow">KURUMSAL</p>
+            <h2 class="section-title">Silikon Teknolojilerinde Güvenilir Tedarikçiniz</h2>
+            <p class="section-lead">
+              HTM SİLİKON KİMYA, silikon bazlı ürünler, endüstriyel silikon reçineler ve özel kimyasal çözümler alanında işletmelerin üretim ihtiyaçlarına yönelik ürün tedariki sunmayı hedefleyen bir kimya firmasıdır. Likit silikon kauçuk (LSR), RTV silikon, HTV silikon, silikon yardımcı kimyasalları, tekstil yardımcı kimyasalları ve endüstriyel silikon reçine ürün gruplarımızla farklı sektörlerin ihtiyaçlarına cevap vermeyi amaçlıyoruz.
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-600">
+              Üretimde kaliteyi, doğru hammadde seçimini ve tedarik sürekliliğini önemseyen işletmeler için HTM SİLİKON KİMYA; ürün çeşitliliği, çözüm odaklı yaklaşımı ve güvenilir ticari iş birliği anlayışıyla öne çıkmayı hedeflemektedir.
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-600">
+              HTM SİLİKON KİMYA olarak önceliğimiz; müşterilerimizin uygulama ihtiyaçlarını anlamak, uygun likit silikon reçine seçeneklerini sunmak ve tedarik süreçlerinde güvenilir bir iş ortağı olmaktır. Ürün seçiminden teknik ihtiyaçların değerlendirilmesine kadar her aşamada, müşteri memnuniyetini ve sürdürülebilir iş birliklerini ön planda tutuyoruz.
+            </p>
+          </div>
+
+          <div class="reveal rounded-2xl border border-slate-200 bg-mist p-6 sm:p-8">
+            <h3 class="font-display text-xl font-bold text-navy-900">Neden HTM SİLİKON KİMYA?</h3>
+            <ul class="mt-6 space-y-5">
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white text-lg text-cobalt-600 shadow-sm"><i class="fa-solid fa-flask"></i></span>
+                <div>
+                  <h4 class="font-display text-base font-bold text-navy-900">Ürün odaklı yaklaşım</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Farklı uygulama ihtiyaçlarına uygun likit silikon reçine seçenekleri.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white text-lg text-cobalt-600 shadow-sm"><i class="fa-solid fa-truck-fast"></i></span>
+                <div>
+                  <h4 class="font-display text-base font-bold text-navy-900">Güvenilir tedarik</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">İş süreçlerinde sürekliliği ve müşteri memnuniyetini esas alan hizmet anlayışı.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white text-lg text-cobalt-600 shadow-sm"><i class="fa-solid fa-clipboard-check"></i></span>
+                <div>
+                  <h4 class="font-display text-base font-bold text-navy-900">Doğru ürün seçimi</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Uygulama alanına ve teknik gereksinimlere göre ürün değerlendirmesi.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white text-lg text-cobalt-600 shadow-sm"><i class="fa-solid fa-lightbulb"></i></span>
+                <div>
+                  <h4 class="font-display text-base font-bold text-navy-900">Çözüm odaklı hizmet</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Müşterilerimizin üretim süreçlerine uygun çözümler geliştirmeye yönelik yaklaşım.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white text-lg text-cobalt-600 shadow-sm"><i class="fa-solid fa-handshake"></i></span>
+                <div>
+                  <h4 class="font-display text-base font-bold text-navy-900">Uzun vadeli iş ortaklığı</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Kalite, güven ve karşılıklı memnuniyet temelinde sürdürülebilir ticari ilişkiler.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sertifika ve uygunluk belgeleri -->
+        <div class="reveal relative isolate mt-12 flex flex-col gap-5 overflow-hidden rounded-2xl bg-navy-900 p-7 text-white shadow-card sm:flex-row sm:items-center sm:gap-7 sm:p-9">
+          <div class="hero-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+          <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/10 text-2xl text-wave-300"><i class="fa-solid fa-certificate"></i></span>
+          <p class="leading-relaxed text-wave-100/90 sm:text-[1.0625rem]">
+            Silikon ürünlerimiz; <strong class="font-semibold text-white">FDA, LFGB, REACH ve RoHS</strong> gereklilikleri ile <strong class="font-semibold text-white">ZDHC Level 3 OEKO-TEX® ECO PASSPORT</strong> kapsamındaki sertifika ve uygunluk belgeleriyle desteklenmektedir. Kalite, ürün güvenliği ve sürdürülebilirlik ilkelerini esas alarak uluslararası standartlara uygun çözümler sunmayı hedefliyoruz.
+          </p>
+        </div>
+
+        <div class="reveal mt-10 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <p class="max-w-2xl leading-relaxed text-slate-600">
+            İhtiyaçlarınızda doğru ürüne ulaşmak, uygulamanıza uygun seçenekleri değerlendirmek ve ürün tedariki hakkında bilgi almak için HTM SİLİKON KİMYA ile iletişime geçebilirsiniz.
+          </p>
+          <div class="flex shrink-0 flex-col gap-3 sm:flex-row">
+            <a href="#urunler" class="btn btn-primary">Ürün Vitrinini Gör <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            <a href="#iletisim" class="btn btn-outline">Teklif İsteyin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜRÜN VİTRİNİ -->
+    <section id="urunler" class="border-y border-slate-200/70 bg-mist py-20 sm:py-24">
+      <div class="container-x">
+        <div class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-2xl">
+            <p class="eyebrow">ÜRÜNLER</p>
+            <h2 class="section-title">Ürün Vitrini</h2>
+            <p class="section-lead">Tekstil baskıdan medikale, kalıptan kauçuğa 11 ürün grubu. Görselleri büyütmek için ürün görseline dokunun.</p>
+          </div>
+          <p class="flex max-w-sm items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-600">
+            <i class="fa-regular fa-file-lines mt-0.5 text-cobalt-600"></i>
+            <span>Teknik föy (TDS), MSDS, sertifikalar ve fiyat bilgisi talebiniz üzerine WhatsApp veya e-posta ile iletilir.</span>
+          </p>
+        </div>
+
+        <!-- TDS notu: PDF dosyalarınız hazır olduğunda ilgili "TDS / MSDS / Sertifika" bağlantısında
+             data-wa="tds" özelliğini silip href değerini PDF yolu yapın. Örn: href="tds/corap-baski.pdf" -->
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <!-- 01 -->
+          <article id="corap-baski" class="product reveal" data-product="Çorap Baskı Silikonu">
+            <button type="button" class="product-media" data-gallery="corap-baski" data-count="9" aria-label="Çorap Baskı Silikonu görsellerini büyüt">
+              <img src="images/urunler/corap-baski.jpg" alt="Kaydırmaz silikon baskılı çorap ve baskı silikonu kovaları" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 9 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-socks"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">01 · TEKSTİL BASKI</p>
+                  <h3 class="product-title">Çorap Baskı Silikonu</h3>
+                </div>
+              </div>
+              <p class="product-desc">Çorap, patik ve eldiven tabanlarında kaydırmaz (anti-slip) baskı için geliştirilmiş, kumaşa güçlü tutunan baskı silikonu.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Çorap, patik ve eldiven tabanı</dd></div>
+                <div><dt>Özellik</dt><dd>Kaydırmaz · esnek · yıkamaya dayanıklı</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article id="gofre-baski" class="product reveal" data-product="Gofre Baskı Silikonu">
+            <button type="button" class="product-media" data-gallery="gofre-baski" data-count="5" aria-label="Gofre Baskı Silikonu görsellerini büyüt">
+              <img src="images/urunler/gofre-baski.jpg" alt="Gofre (kabartma) baskılı kumaşlar ve silikon kovaları" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 5 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-shirt"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">02 · TEKSTİL BASKI</p>
+                  <h3 class="product-title">Gofre Baskı Silikonu</h3>
+                </div>
+              </div>
+              <p class="product-desc">Kumaş üzerinde kabartma (3D) logo ve yazı efekti veren gofre baskılar için silikon. Net kontur ve yumuşak tuşe sağlar.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Tişört, sweatshirt ve triko</dd></div>
+                <div><dt>Özellik</dt><dd>Kabartma efekt · yumuşak tuşe</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article id="aksesuar" class="product reveal" data-product="Aksesuar Lastik Şerit Kordon Silikonu">
+            <button type="button" class="product-media" data-gallery="aksesuar" data-count="1" aria-label="Aksesuar Lastik Şerit Kordon Silikonu görselini büyüt">
+              <img src="images/urunler/aksesuar.jpg" alt="Lastik şeritler üzerine kabartma silikon logo baskıları" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
+              <span class="product-count"><i class="fa-solid fa-magnifying-glass-plus"></i> Büyüt</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-tape"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">03 · TEKSTİL AKSESUAR</p>
+                  <h3 class="product-title">Aksesuar Lastik Şerit Kordon Silikonu</h3>
+                </div>
+              </div>
+              <p class="product-desc">Lastik, şerit ve kordon üzerine kabartma logo ve yazı baskıları için yüksek esneklikte silikon.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Lastik, şerit ve kordon üstü baskı</dd></div>
+                <div><dt>Özellik</dt><dd>Yüksek esneklik · parlak yüzey</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article id="bebek-emzik" class="product reveal" data-product="Bebek Emzik Silikonu">
+            <button type="button" class="product-media" data-gallery="bebek-emzik" data-count="7" aria-label="Bebek Emzik Silikonu görsellerini büyüt">
+              <img src="images/urunler/bebek-emzik.jpg" alt="Şeffaf silikon biberon emziği" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-kit-medical"></i> Medikal</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 7 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-baby"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">04 · BEBEK ÜRÜNLERİ</p>
+                  <h3 class="product-title">Bebek Emzik Silikonu</h3>
+                </div>
+              </div>
+              <p class="product-desc">Biberon emziği, yalancı emzik ve diş kaşıyıcı gibi bebek ürünlerinin üretimine yönelik yüksek şeffaflıkta silikon.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Biberon emziği, emzik, diş kaşıyıcı</dd></div>
+                <div><dt>Özellik</dt><dd>Yüksek şeffaflık · yumuşak · elastik</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article id="medikal" class="product reveal" data-product="Medikal Silikonlar">
+            <button type="button" class="product-media" data-gallery="medikal" data-count="2" aria-label="Medikal Silikonlar görsellerini büyüt">
+              <img src="images/urunler/medikal.jpg" alt="Silikondan üretilmiş medikal maske, konnektör ve parçalar" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-kit-medical"></i> Medikal</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 2 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-kit-medical"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">05 · MEDİKAL</p>
+                  <h3 class="product-title">Medikal Silikonlar</h3>
+                </div>
+              </div>
+              <p class="product-desc">Sonda, kateter, solunum maskesi, balon ve hortum gibi medikal ürünlerin üretimine yönelik silikon hammaddeleri.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Kateter, sonda, maske, balon, hortum</dd></div>
+                <div><dt>Özellik</dt><dd>Şeffaf · esnek · hassas kalıplama</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06 -->
+          <article id="protez" class="product reveal" data-product="Protez Silikonlar">
+            <button type="button" class="product-media" data-gallery="protez" data-count="6" aria-label="Protez Silikonlar görsellerini büyüt">
+              <img src="images/urunler/protez.jpg" alt="Silikon el, kulak ve parmak protezleri ile ten rengi silikon" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-kit-medical"></i> Medikal</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 6 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-hand"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">06 · MEDİKAL</p>
+                  <h3 class="product-title">Protez Silikonlar</h3>
+                </div>
+              </div>
+              <p class="product-desc">El, ayak, parmak ve kulak protezleri için ten rengine pigmentlenebilen, gerçekçi doku ve detay veren yumuşak silikonlar.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>El, ayak, parmak ve kulak protezleri</dd></div>
+                <div><dt>Özellik</dt><dd>Ten rengi pigmentleme · ince detay</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 07 -->
+          <article id="rtv2" class="product reveal" data-product="RTV 2 Kalıp Silikonları">
+            <button type="button" class="product-media" data-gallery="rtv2" data-count="1" aria-label="RTV 2 Kalıp Silikonları görselini büyüt">
+              <img src="images/urunler/rtv2.jpg" alt="RTV 2 silikondan üretilmiş jel topukluk" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-cubes"></i> Kalıp</span>
+              <span class="product-count"><i class="fa-solid fa-magnifying-glass-plus"></i> Büyüt</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-cubes"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">07 · KALIP</p>
+                  <h3 class="product-title">RTV 2 Kalıp Silikonları</h3>
+                </div>
+              </div>
+              <p class="product-desc">Oda sıcaklığında kürleşen çift bileşenli silikonlar. Kalıp alma, döküm ve jel ürün uygulamalarında yüksek detay aktarımı sağlar.</p>
+              <dl class="product-specs">
+                <div><dt>Sistem</dt><dd>Çift bileşenli (A + B), oda sıcaklığında kürleşir</dd></div>
+                <div><dt>Kullanım</dt><dd>Kalıp, döküm, topukluk ve tabanlık</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 08 -->
+          <article id="rtv1" class="product reveal" data-product="RTV 1 Hızlı Kürleşen Silikon">
+            <button type="button" class="product-media" data-gallery="rtv1" data-count="3" aria-label="RTV 1 Hızlı Kürleşen Silikon görsellerini büyüt">
+              <img src="images/urunler/rtv1.jpg" alt="Kaydırmaz silikon şeritli lastik ve dantel bantlar" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 3 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-bolt"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">08 · RTV 1</p>
+                  <h3 class="product-title">RTV 1 Hızlı Kürleşen Silikon</h3>
+                </div>
+              </div>
+              <p class="product-desc">Tek bileşenli, hızlı kürleşen silikon. Lastik, dantel ve korse bantlarında kaydırmaz şerit uygulamaları için idealdir.</p>
+              <dl class="product-specs">
+                <div><dt>Sistem</dt><dd>Tek bileşenli, hızlı kürleşme</dd></div>
+                <div><dt>Kullanım</dt><dd>Kaydırmaz lastik, iç giyim, dizlik</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 09 -->
+          <article id="emprime" class="product reveal" data-product="Emprime Baskı Silikonu">
+            <button type="button" class="product-media" data-gallery="emprime" data-count="2" aria-label="Emprime Baskı Silikonu görsellerini büyüt">
+              <img src="images/urunler/emprime.jpg" alt="Kumaş üzerine emprime (serigrafi) silikon baskı" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 2 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-fill-drip"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">09 · TEKSTİL BASKI</p>
+                  <h3 class="product-title">Emprime Baskı Silikonu</h3>
+                </div>
+              </div>
+              <p class="product-desc">Serigrafi (emprime) baskıda canlı renk, yüksek örtücülük ve yumuşak tuşe sağlayan tekstil baskı silikonu.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Tişört ve kumaş üzeri serigrafi baskı</dd></div>
+                <div><dt>Özellik</dt><dd>Yüksek örtücülük · esnek · canlı renk</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article id="transfer" class="product reveal" data-product="Transfer Silikonu">
+            <button type="button" class="product-media" data-gallery="transfer" data-count="1" aria-label="Transfer Silikonu görselini büyüt">
+              <img src="images/urunler/transfer.jpg" alt="Transfer baskı silikonuyla tişört üzerine uygulanmış kabartma HTM logosu" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
+              <span class="product-count"><i class="fa-solid fa-magnifying-glass-plus"></i> Büyüt</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-layer-group"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">10 · TEKSTİL BASKI</p>
+                  <h3 class="product-title">Transfer Silikonu</h3>
+                </div>
+              </div>
+              <p class="product-desc">Isı transfer etiket ve logo üretimi için silikon. Film üzerinden presle kumaşa aktarılır; net kenar ve kabartmalı yüzey verir.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Transfer etiket, logo ve arma</dd></div>
+                <div><dt>Özellik</dt><dd>Kabartma (3D) yüzey · net kenar</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11 -->
+          <article id="htv" class="product reveal" data-product="HTV Kauçuk">
+            <button type="button" class="product-media" data-gallery="htv" data-count="2" aria-label="HTV Kauçuk görsellerini büyüt">
+              <img src="images/urunler/htv.jpg" alt="HTV silikon kauçuktan üretilmiş körük, conta, profil ve hortumlar" width="800" height="600" loading="lazy" decoding="async">
+              <span class="product-sector"><i class="fa-solid fa-gears"></i> Kauçuk</span>
+              <span class="product-count"><i class="fa-regular fa-images"></i> 2 görsel</span>
+            </button>
+            <div class="product-body">
+              <div class="flex items-start gap-3.5">
+                <span class="product-icon"><i class="fa-solid fa-gears"></i></span>
+                <div class="min-w-0">
+                  <p class="product-kicker">11 · KAUÇUK</p>
+                  <h3 class="product-title">HTV Kauçuk</h3>
+                </div>
+              </div>
+              <p class="product-desc">Yüksek sıcaklıkta vulkanize olan katı silikon kauçuk. Conta, körük, hortum, profil ve kalıplı parça üretimi için.</p>
+              <dl class="product-specs">
+                <div><dt>Kullanım</dt><dd>Otomotiv, beyaz eşya, mutfak ürünleri</dd></div>
+                <div><dt>Özellik</dt><dd>−60 °C ~ 250 °C · kimyasal dayanım</dd></div>
+              </dl>
+              <div class="product-actions">
+                <a class="btn btn-outline" data-wa="tds" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> TDS / MSDS / Sertifika</a>
+                <a class="btn btn-wa" data-wa="fiyat" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> Fiyat / Bilgi Al</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Özel talep kartı -->
+          <aside class="reveal relative isolate flex flex-col justify-between overflow-hidden rounded-2xl bg-navy-900 p-7 text-white shadow-card">
+            <div class="hero-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+            <div>
+              <span class="grid h-12 w-12 place-items-center rounded-xl bg-white/10 text-xl text-wave-300"><i class="fa-solid fa-flask"></i></span>
+              <h3 class="mt-5 font-display text-xl font-bold leading-snug">Aradığınız ürün listede yok mu?</h3>
+              <p class="mt-3 text-sm leading-relaxed text-wave-100/90">Farklı uygulamalar ve özel talepleriniz için bize ulaşın; ihtiyacınıza uygun silikonu birlikte belirleyelim.</p>
+            </div>
+            <div class="mt-8 grid gap-2">
+              <a class="btn btn-wa" data-wa="genel" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-base"></i> WhatsApp'tan Yazın</a>
+              <a class="btn btn-ghost" href="tel:+905321343576"><i class="fa-solid fa-phone text-xs"></i> +90 532 134 35 76</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ÇAĞRI BANDI -->
+    <section class="relative isolate overflow-hidden bg-cobalt-600 text-white">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-cobalt-500 via-cobalt-600 to-navy-800" aria-hidden="true"></div>
+      <svg class="absolute inset-x-0 bottom-0 -z-10 h-24 w-full opacity-30" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#7CC8FF" d="M0 70C240 20 480 120 720 70s480-50 720 0v70H0z"/>
+        <path fill="#ffffff" fill-opacity=".5" d="M0 100c240-36 480 36 720 0s480-36 720 4v36H0z"/>
+      </svg>
+      <div class="container-x reveal flex flex-col items-start gap-8 py-14 lg:flex-row lg:items-center lg:justify-between lg:py-16">
+        <div class="max-w-2xl">
+          <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Uygulamanızı anlatın, doğru silikonu birlikte seçelim.</h2>
+          <p class="mt-3 text-base text-wave-100">Ürün, teknik föy (TDS), MSDS, sertifika ve fiyat bilgisi için tek mesaj yeterli.</p>
+        </div>
+        <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+          <a class="btn btn-light px-6 py-3.5" data-wa="genel" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp'tan Yazın</a>
+          <a class="btn btn-ghost px-6 py-3.5" href="tel:+905321343576"><i class="fa-solid fa-phone text-xs"></i> Hemen Arayın</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim" class="bg-white py-20 sm:py-24">
+      <div class="container-x">
+        <div class="reveal max-w-2xl">
+          <p class="eyebrow">İLETİŞİM</p>
+          <h2 class="section-title">Teklif alın, birlikte planlayalım</h2>
+          <p class="section-lead">İhtiyacınızı iletin; ürün, teknik föy ve fiyat bilgisiyle size dönüş yapalım.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-12">
+          <!-- İletişim bilgileri -->
+          <div class="reveal relative isolate flex flex-col overflow-hidden rounded-3xl bg-navy-900 p-7 text-white sm:p-9 lg:col-span-5">
+            <div class="hero-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+            <h3 class="font-display text-xl font-bold">İletişim Bilgileri</h3>
+            <ul class="mt-7 space-y-6">
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-wave-300"><i class="fa-solid fa-user-tie"></i></span>
+                <div>
+                  <p class="text-[11px] font-bold tracking-[0.14em] text-wave-200">YETKİLİ</p>
+                  <p class="mt-1 font-semibold">Metin Tanrıkulu</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-wave-300"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <p class="text-[11px] font-bold tracking-[0.14em] text-wave-200">TELEFON / WHATSAPP</p>
+                  <a href="tel:+905321343576" class="mt-1 block font-semibold transition hover:text-wave-300">+90 532 134 35 76</a>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-wave-300"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <p class="text-[11px] font-bold tracking-[0.14em] text-wave-200">E-POSTA</p>
+                  <a href="mailto:metin@htmkimya.com" class="mt-1 block break-all font-semibold transition hover:text-wave-300">metin@htmkimya.com</a>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-wave-300"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <p class="text-[11px] font-bold tracking-[0.14em] text-wave-200">ADRES</p>
+                  <address class="mt-1 font-semibold not-italic leading-relaxed">Tahtakale Mah. Babadağ Sokak No:2 A,<br>34320, Avcılar / İstanbul</address>
+                </div>
+              </li>
+            </ul>
+            <div class="mt-auto grid gap-3 pt-9 sm:grid-cols-2">
+              <a class="btn btn-wa px-3" data-wa="genel" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
+              <a class="btn btn-ghost px-3" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tahtakale%20Mah.%20Babada%C4%9F%20Sokak%20No%3A2%20A%2C%2034320%20Avc%C4%B1lar%2F%C4%B0stanbul" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right"></i> Yol Tarifi Al</a>
+            </div>
+          </div>
+
+          <!-- Teklif / iletişim formu -->
+          <div class="reveal rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-9 lg:col-span-7">
+            <h3 class="font-display text-xl font-bold text-navy-900">Teklif / İletişim Formu</h3>
+            <p class="mt-1.5 text-sm text-slate-600">Formu doldurun; talebiniz WhatsApp veya e-posta ile doğrudan yetkiliye ulaşsın.</p>
+
+            <form id="teklif-formu" class="mt-7 grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="field-label" for="f-ad">Ad Soyad <span class="text-cobalt-600">*</span></label>
+                <input class="field" id="f-ad" name="ad" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label class="field-label" for="f-firma">Firma</label>
+                <input class="field" id="f-firma" name="firma" type="text" autocomplete="organization">
+              </div>
+              <div>
+                <label class="field-label" for="f-telefon">Telefon <span class="text-cobalt-600">*</span></label>
+                <input class="field" id="f-telefon" name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx" required>
+              </div>
+              <div>
+                <label class="field-label" for="f-eposta">E-posta</label>
+                <input class="field" id="f-eposta" name="eposta" type="email" autocomplete="email" placeholder="ornek@firma.com">
+              </div>
+              <div>
+                <label class="field-label" for="f-urun">İlgilendiğiniz Ürün</label>
+                <select class="field" id="f-urun" name="urun">
+                  <option>Genel bilgi / Diğer</option>
+                  <option>Çorap Baskı Silikonu</option>
+                  <option>Gofre Baskı Silikonu</option>
+                  <option>Aksesuar Lastik Şerit Kordon Silikonu</option>
+                  <option>Bebek Emzik Silikonu</option>
+                  <option>Medikal Silikonlar</option>
+                  <option>Protez Silikonlar</option>
+                  <option>RTV 2 Kalıp Silikonları</option>
+                  <option>RTV 1 Hızlı Kürleşen Silikon</option>
+                  <option>Emprime Baskı Silikonu</option>
+                  <option>Transfer Silikonu</option>
+                  <option>HTV Kauçuk</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="f-miktar">Tahmini Miktar</label>
+                <input class="field" id="f-miktar" name="miktar" type="text" placeholder="Örn. 200 kg">
+              </div>
+              <div class="sm:col-span-2">
+                <label class="field-label" for="f-mesaj">Mesajınız <span class="text-cobalt-600">*</span></label>
+                <textarea class="field" id="f-mesaj" name="mesaj" rows="4" placeholder="Uygulamanızı ve ihtiyacınızı kısaca anlatın." required></textarea>
+              </div>
+              <div class="flex flex-col gap-3 sm:col-span-2 sm:flex-row">
+                <button type="submit" data-channel="whatsapp" class="btn btn-wa flex-1 py-3.5"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp ile Gönder</button>
+                <button type="submit" data-channel="eposta" class="btn btn-outline flex-1 py-3.5"><i class="fa-solid fa-envelope"></i> E-posta ile Gönder</button>
+              </div>
+              <p id="form-durum" class="hidden items-start gap-2 rounded-xl bg-wave-100 px-4 py-3 text-sm font-medium text-navy-800 sm:col-span-2" role="status" aria-live="polite"></p>
+              <p class="text-xs leading-relaxed text-slate-500 sm:col-span-2">Bilgileriniz bu sitede saklanmaz; talebiniz kendi WhatsApp veya e-posta uygulamanız üzerinden iletilir.</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Harita -->
+        <div class="reveal mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-mist shadow-card">
+          <iframe class="block h-[340px] w-full sm:h-[420px]" title="HTM Silikon Kimya Tekstil — harita konumu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            src="https://www.google.com/maps?q=Tahtakale%20Mah.%20Babada%C4%9F%20Sokak%20No%3A2%20A%2C%2034320%20Avc%C4%B1lar%2F%C4%B0stanbul&amp;z=16&amp;hl=tr&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-sm text-wave-100/80">
+    <div class="container-x grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-12">
+      <div class="lg:col-span-4">
+        <a href="#anasayfa" class="inline-flex items-center gap-3" aria-label="HTM Silikon Kimya Tekstil — Ana Sayfa">
+          <img src="images/htm-logo-beyaz.svg" alt="HTM" width="1409" height="520" loading="lazy" class="h-11 w-auto">
+          <span class="border-l border-white/15 pl-3 text-[11px] font-bold leading-[1.4] tracking-[0.16em] text-wave-200">SİLİKON KİMYA<br>TEKSTİL</span>
+        </a>
+        <p class="mt-5 max-w-xs leading-relaxed">Tekstil, kalıp, medikal ve kauçuk sanayii için endüstriyel silikon hammaddelerinde güvenilir üretim ve tedarik.</p>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h2 class="font-display text-sm font-bold tracking-wide text-white">Hızlı Bağlantılar</h2>
+        <ul class="mt-4 space-y-2.5">
+          <li><a href="#anasayfa" class="transition hover:text-white">Ana Sayfa</a></li>
+          <li><a href="#kurumsal" class="transition hover:text-white">Kurumsal</a></li>
+          <li><a href="#urunler" class="transition hover:text-white">Ürünler</a></li>
+          <li><a href="#iletisim" class="transition hover:text-white">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h2 class="font-display text-sm font-bold tracking-wide text-white">Ürünler</h2>
+        <ul class="mt-4 space-y-2.5">
+          <li><a href="#corap-baski" class="transition hover:text-white">Çorap Baskı Silikonu</a></li>
+          <li><a href="#gofre-baski" class="transition hover:text-white">Gofre Baskı Silikonu</a></li>
+          <li><a href="#aksesuar" class="transition hover:text-white">Aksesuar Lastik Şerit Kordon Silikonu</a></li>
+          <li><a href="#bebek-emzik" class="transition hover:text-white">Bebek Emzik Silikonu</a></li>
+          <li><a href="#medikal" class="transition hover:text-white">Medikal Silikonlar</a></li>
+          <li><a href="#protez" class="transition hover:text-white">Protez Silikonlar</a></li>
+          <li><a href="#rtv2" class="transition hover:text-white">RTV 2 Kalıp Silikonları</a></li>
+          <li><a href="#rtv1" class="transition hover:text-white">RTV 1 Hızlı Kürleşen Silikon</a></li>
+          <li><a href="#emprime" class="transition hover:text-white">Emprime Baskı Silikonu</a></li>
+          <li><a href="#transfer" class="transition hover:text-white">Transfer Silikonu</a></li>
+          <li><a href="#htv" class="transition hover:text-white">HTV Kauçuk</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h2 class="font-display text-sm font-bold tracking-wide text-white">İletişim</h2>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-user-tie mt-1 w-4 text-wave-400"></i><span>Metin Tanrıkulu</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone mt-1 w-4 text-wave-400"></i><a href="tel:+905321343576" class="transition hover:text-white">+90 532 134 35 76</a></li>
+          <li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 w-4 text-wave-400"></i><a href="mailto:metin@htmkimya.com" class="break-all transition hover:text-white">metin@htmkimya.com</a></li>
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 w-4 text-wave-400"></i><span>Tahtakale Mah. Babadağ Sokak No:2 A, 34320, Avcılar / İstanbul</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="container-x flex flex-col gap-2 py-5 pr-20 text-xs sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="yil">2026</span> HTM Silikon Kimya Tekstil Sanayi ve Ticaret Limited Şirketi. Tüm hakları saklıdır.</p>
+        <p>htmkimya.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sabit WhatsApp butonu -->
+  <a href="https://wa.me/905321343576" data-wa="genel" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın"
+     class="fixed bottom-5 right-5 z-30 grid h-14 w-14 place-items-center rounded-full bg-cobalt-600 text-white hover:bg-cobalt-700 shadow-lg shadow-navy-950/30 transition duration-200 hover:scale-105 focus:outline-none focus-visible:ring-4 focus-visible:ring-cobalt-500/40">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- Ürün görseli büyütme penceresi -->
+  <dialog id="lightbox" class="m-0 h-full max-h-none w-full max-w-none bg-transparent p-0 backdrop:bg-navy-950/90" aria-labelledby="lb-baslik">
+    <div class="flex h-full flex-col">
+      <div class="flex items-center justify-between gap-4 px-4 py-3 text-white sm:px-6">
+        <div class="min-w-0">
+          <p id="lb-baslik" class="truncate font-display text-base font-bold sm:text-lg"></p>
+          <p id="lb-sayac" class="text-xs text-wave-200"></p>
+        </div>
+        <button type="button" id="lb-kapat" class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white/10 transition hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label="Kapat">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div id="lb-sahne" class="relative flex min-h-0 flex-1 items-center justify-center px-4 sm:px-20">
+        <img id="lb-gorsel" class="max-h-full max-w-full rounded-xl object-contain shadow-2xl" alt="">
+        <button type="button" id="lb-onceki" class="absolute left-2 top-1/2 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition hover:bg-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:left-5" aria-label="Önceki görsel">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button type="button" id="lb-sonraki" class="absolute right-2 top-1/2 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white/15 text-white backdrop-blur transition hover:bg-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-5" aria-label="Sonraki görsel">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="flex justify-center px-4 py-4">
+        <a id="lb-wa" class="btn btn-wa" href="https://wa.me/905321343576" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp text-lg"></i> Bu ürün için Fiyat / Bilgi Al</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---- Ayarlar: numara veya e-posta değişirse yalnızca burayı ve HTML'deki tel:/mailto: bağlantılarını güncelleyin ---- */
+      var WHATSAPP = '905321343576';
+      var EPOSTA = 'metin@htmkimya.com';
+
+      var mesajlar = {
+        genel: function () { return 'Merhaba, ürünleriniz hakkında bilgi almak istiyorum.'; },
+        fiyat: function (urun) { return 'Merhaba, ' + urun + ' hakkında fiyat ve bilgi almak istiyorum.'; },
+        tds:   function (urun) { return 'Merhaba, ' + urun + ' için teknik föy (TDS), MSDS ve sertifika belgelerini talep ediyorum.'; }
+      };
+      function waUrl(metin) {
+        return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(metin);
+      }
+
+      /* ---- WhatsApp bağlantılarına hazır mesaj ekle ---- */
+      document.querySelectorAll('a[data-wa]').forEach(function (a) {
+        var kart = a.closest('[data-product]');
+        var olustur = mesajlar[a.dataset.wa] || mesajlar.genel;
+        a.href = waUrl(olustur(kart ? kart.dataset.product : ''));
+      });
+
+      /* ---- Mobil menü ---- */
+      var menuBtn = document.getElementById('menu-toggle');
+      var menu = document.getElementById('mobile-menu');
+      function menuAyarla(acik) {
+        menu.classList.toggle('hidden', !acik);
+        menuBtn.setAttribute('aria-expanded', String(acik));
+        menuBtn.querySelector('i').className = acik ? 'fa-solid fa-xmark text-lg' : 'fa-solid fa-bars text-lg';
+      }
+      menuBtn.addEventListener('click', function () { menuAyarla(menu.classList.contains('hidden')); });
+      menu.addEventListener('click', function (e) { if (e.target.closest('a')) menuAyarla(false); });
+
+      /* ---- Header gölgesi ---- */
+      var header = document.getElementById('site-header');
+      function headerDurum() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
+      window.addEventListener('scroll', headerDurum, { passive: true });
+      headerDurum();
+
+      /* ---- Aktif menü bağlantısı + kaydırınca beliren içerik ---- */
+      var navLinkler = document.querySelectorAll('[data-nav]');
+      var gizliler = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var bolumIzleyici = new IntersectionObserver(function (girdiler) {
+          girdiler.forEach(function (g) {
+            if (!g.isIntersecting) return;
+            navLinkler.forEach(function (l) {
+              if (l.dataset.nav === g.target.id) l.setAttribute('aria-current', 'true');
+              else l.removeAttribute('aria-current');
+            });
+          });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        ['anasayfa', 'kurumsal', 'urunler', 'iletisim'].forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el) bolumIzleyici.observe(el);
+        });
+
+        var belirmeIzleyici = new IntersectionObserver(function (girdiler) {
+          girdiler.forEach(function (g) {
+            if (!g.isIntersecting) return;
+            g.target.classList.add('is-visible');
+            belirmeIzleyici.unobserve(g.target);
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+        gizliler.forEach(function (el) { belirmeIzleyici.observe(el); });
+      } else {
+        gizliler.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
+      /* ---- Ürün görseli büyütme / galeri ---- */
+      var lb = document.getElementById('lightbox');
+      var lbGorsel = document.getElementById('lb-gorsel');
+      var lbBaslik = document.getElementById('lb-baslik');
+      var lbSayac = document.getElementById('lb-sayac');
+      var lbOnceki = document.getElementById('lb-onceki');
+      var lbSonraki = document.getElementById('lb-sonraki');
+      var lbSahne = document.getElementById('lb-sahne');
+      var lbWa = document.getElementById('lb-wa');
+      var gorseller = [];
+      var sira = 0;
+      var urunAdi = '';
+
+      function goster(i) {
+        sira = (i + gorseller.length) % gorseller.length;
+        lbGorsel.src = gorseller[sira];
+        lbGorsel.alt = urunAdi + ' — görsel ' + (sira + 1) + ' / ' + gorseller.length;
+        lbSayac.textContent = gorseller.length > 1 ? (sira + 1) + ' / ' + gorseller.length : '';
+        if (gorseller.length > 1) new Image().src = gorseller[(sira + 1) % gorseller.length];
+      }
+
+      document.querySelectorAll('[data-gallery]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var adet = parseInt(btn.dataset.count, 10) || 1;
+          urunAdi = btn.closest('[data-product]').dataset.product;
+          gorseller = [];
+          for (var n = 1; n <= adet; n++) gorseller.push('images/galeri/' + btn.dataset.gallery + '-' + n + '.jpg');
+
+          if (typeof lb.showModal !== 'function') { window.open(gorseller[0], '_blank'); return; }
+
+          lbBaslik.textContent = urunAdi;
+          lbWa.href = waUrl(mesajlar.fiyat(urunAdi));
+          lbOnceki.style.display = lbSonraki.style.display = adet > 1 ? '' : 'none';
+          goster(0);
+          lb.showModal();
+          document.documentElement.style.overflow = 'hidden';
+        });
+      });
+
+      document.getElementById('lb-kapat').addEventListener('click', function () { lb.close(); });
+      lbOnceki.addEventListener('click', function () { goster(sira - 1); });
+      lbSonraki.addEventListener('click', function () { goster(sira + 1); });
+      lb.addEventListener('click', function (e) { if (e.target === lb || e.target === lbSahne) lb.close(); });
+      lb.addEventListener('close', function () {
+        document.documentElement.style.overflow = '';
+        lbGorsel.removeAttribute('src');
+      });
+      lb.addEventListener('keydown', function (e) {
+        if (gorseller.length < 2) return;
+        if (e.key === 'ArrowLeft') goster(sira - 1);
+        if (e.key === 'ArrowRight') goster(sira + 1);
+      });
+      var dokunmaX = null;
+      lbSahne.addEventListener('touchstart', function (e) { dokunmaX = e.changedTouches[0].clientX; }, { passive: true });
+      lbSahne.addEventListener('touchend', function (e) {
+        if (dokunmaX === null || gorseller.length < 2) return;
+        var fark = e.changedTouches[0].clientX - dokunmaX;
+        if (Math.abs(fark) > 40) goster(fark < 0 ? sira + 1 : sira - 1);
+        dokunmaX = null;
+      }, { passive: true });
+
+      /* ---- Teklif formu: sunucu gerektirmez, WhatsApp veya e-posta uygulamasını açar ---- */
+      var form = document.getElementById('teklif-formu');
+      var durum = document.getElementById('form-durum');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var veri = new FormData(form);
+        function al(ad) { return String(veri.get(ad) || '').trim(); }
+
+        var satirlar = ['Merhaba, htmkimya.com üzerinden teklif / bilgi talebi:', '', 'Ad Soyad: ' + al('ad')];
+        if (al('firma')) satirlar.push('Firma: ' + al('firma'));
+        satirlar.push('Telefon: ' + al('telefon'));
+        if (al('eposta')) satirlar.push('E-posta: ' + al('eposta'));
+        satirlar.push('Ürün: ' + al('urun'));
+        if (al('miktar')) satirlar.push('Tahmini miktar: ' + al('miktar'));
+        satirlar.push('', 'Mesaj: ' + al('mesaj'));
+        var metin = satirlar.join('\n');
+
+        var kanal = (e.submitter && e.submitter.dataset.channel) || 'whatsapp';
+        if (kanal === 'eposta') {
+          window.location.href = 'mailto:' + EPOSTA +
+            '?subject=' + encodeURIComponent('Teklif Talebi — ' + al('urun')) +
+            '&body=' + encodeURIComponent(metin);
+          durum.textContent = 'E-posta uygulamanız açılıyor. Talebinizi iletmek için e-postayı gönderin.';
+        } else {
+          var pencere = window.open(waUrl(metin), '_blank');
+          if (pencere) pencere.opener = null; else window.location.href = waUrl(metin);
+          durum.textContent = 'WhatsApp açılıyor. Talebinizi iletmek için WhatsApp\'ta “Gönder”e basın.';
+        }
+        durum.classList.remove('hidden');
+        durum.classList.add('flex');
+      });
+
+      /* ---- Telif yılı ---- */
+      document.getElementById('yil').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
