@@ -268,7 +268,7 @@
           <!-- Her görsel iki ürün fotoğrafının birleştirilmiş hâli (images/anasayfa), kutu oranlarına göre hazırlandı -->
           <div class="grid grid-cols-2 gap-3 sm:gap-4">
             <figure class="col-span-2 aspect-[16/10] overflow-hidden rounded-2xl bg-navy-800 shadow-2xl ring-1 ring-white/10">
-              <img src="images/anasayfa/corap-baski.jpg" alt="Çorap baskı silikonu: kaydırmaz silikon baskılı çoraplar ve silikon kovaları" width="1160" height="726" fetchpriority="high" class="h-full w-full object-cover">
+              <img src="images/anasayfa/corap-baski.jpg?v=2" alt="Çorap baskı silikonu: kaydırmaz silikon baskılı çoraplar ve silikon kovaları" width="1160" height="726" fetchpriority="high" class="h-full w-full object-cover">
             </figure>
             <figure class="aspect-[4/3] overflow-hidden rounded-2xl bg-navy-800 shadow-xl ring-1 ring-white/10">
               <img src="images/anasayfa/gofre-baski.jpg" alt="Gofre baskı silikonu ile kabartma baskılı sweatshirt ve tişört" width="800" height="599" class="h-full w-full object-cover">
@@ -303,13 +303,13 @@
             <p class="eyebrow">KURUMSAL</p>
             <h2 class="section-title">Silikon Teknolojilerinde Güvenilir Tedarikçiniz</h2>
             <p class="section-lead">
-              HTM SİLİKON KİMYA, silikon bazlı ürünler, endüstriyel silikon reçineler ve özel kimyasal çözümler alanında işletmelerin üretim ihtiyaçlarına yönelik ürün tedariki sunmayı hedefleyen bir kimya firmasıdır. Likit silikon kauçuk (LSR), RTV silikon, HTV silikon, silikon yardımcı kimyasalları, tekstil yardımcı kimyasalları ve endüstriyel silikon reçine ürün gruplarımızla farklı sektörlerin ihtiyaçlarına cevap vermeyi amaçlıyoruz.
+              <strong class="font-bold text-navy-900">HTM SİLİKON KİMYA</strong>, silikon bazlı ürünler, endüstriyel silikon reçineler ve özel kimyasal çözümler alanında işletmelerin üretim ihtiyaçlarına yönelik ürün tedariki sunmayı hedefleyen bir kimya firmasıdır. Likit silikon kauçuk (LSR), RTV silikon, HTV silikon, silikon yardımcı kimyasalları, tekstil yardımcı kimyasalları ve endüstriyel silikon reçine ürün gruplarımızla farklı sektörlerin ihtiyaçlarına cevap vermeyi amaçlıyoruz.
             </p>
             <p class="mt-4 leading-relaxed text-slate-600">
-              Üretimde kaliteyi, doğru hammadde seçimini ve tedarik sürekliliğini önemseyen işletmeler için HTM SİLİKON KİMYA; ürün çeşitliliği, çözüm odaklı yaklaşımı ve güvenilir ticari iş birliği anlayışıyla öne çıkmayı hedeflemektedir.
+              Üretimde kaliteyi, doğru hammadde seçimini ve tedarik sürekliliğini önemseyen işletmeler için <strong class="font-bold text-navy-900">HTM SİLİKON KİMYA; ürün çeşitliliği, çözüm odaklı yaklaşımı ve güvenilir ticari iş birliği anlayışıyla</strong> öne çıkmayı hedeflemektedir.
             </p>
             <p class="mt-4 leading-relaxed text-slate-600">
-              HTM SİLİKON KİMYA olarak önceliğimiz; müşterilerimizin uygulama ihtiyaçlarını anlamak, uygun likit silikon reçine seçeneklerini sunmak ve tedarik süreçlerinde güvenilir bir iş ortağı olmaktır. Ürün seçiminden teknik ihtiyaçların değerlendirilmesine kadar her aşamada, müşteri memnuniyetini ve sürdürülebilir iş birliklerini ön planda tutuyoruz.
+              <strong class="font-bold text-navy-900">HTM SİLİKON KİMYA</strong> olarak önceliğimiz; müşterilerimizin uygulama ihtiyaçlarını anlamak, uygun likit silikon reçine seçeneklerini sunmak ve tedarik süreçlerinde güvenilir bir iş ortağı olmaktır. Ürün seçiminden teknik ihtiyaçların değerlendirilmesine kadar her aşamada, müşteri memnuniyetini ve sürdürülebilir iş birliklerini ön planda tutuyoruz.
             </p>
           </div>
 
@@ -398,7 +398,7 @@
           <!-- 01 -->
           <article id="corap-baski" class="product reveal" data-product="Çorap Baskı Silikonu">
             <button type="button" class="product-media" data-gallery="corap-baski" data-count="9" aria-label="Çorap Baskı Silikonu görsellerini büyüt">
-              <img src="images/urunler/corap-baski.jpg" alt="Kaydırmaz silikon baskılı çorap ve baskı silikonu kovaları" width="800" height="600" loading="lazy" decoding="async">
+              <img src="images/urunler/corap-baski.jpg?v=2" alt="Kaydırmaz silikon baskılı çorap ve baskı silikonu kovaları" width="800" height="600" loading="lazy" decoding="async">
               <span class="product-sector"><i class="fa-solid fa-shirt"></i> Tekstil</span>
               <span class="product-count"><i class="fa-regular fa-images"></i> 9 görsel</span>
             </button>
@@ -942,6 +942,7 @@
       /* ---- Ayarlar: numara veya e-posta değişirse yalnızca burayı ve HTML'deki tel:/mailto: bağlantılarını güncelleyin ---- */
       var WHATSAPP = '905321343576';
       var EPOSTA = 'metin@htmkimya.com';
+      var GALERI_SURUM = 2; // galeri görsellerinden biri değişince artırın; tarayıcılar yeni dosyayı çeker
 
       var mesajlar = {
         genel: function () { return 'Merhaba, ürünleriniz hakkında bilgi almak istiyorum.'; },
@@ -1032,7 +1033,7 @@
           var adet = parseInt(btn.dataset.count, 10) || 1;
           urunAdi = btn.closest('[data-product]').dataset.product;
           gorseller = [];
-          for (var n = 1; n <= adet; n++) gorseller.push('images/galeri/' + btn.dataset.gallery + '-' + n + '.jpg');
+          for (var n = 1; n <= adet; n++) gorseller.push('images/galeri/' + btn.dataset.gallery + '-' + n + '.jpg?v=' + GALERI_SURUM);
 
           if (typeof lb.showModal !== 'function') { window.open(gorseller[0], '_blank'); return; }
 
